@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ATTENDENCE MANAGEMENT SYSTEM</title>
+	<style type="text/css">
+		#txt{
+			margin : 150px 200px;
+			border-style: double;
+			position: fixed;
+			width: 70%;
+			height: 25%;
+			border: 2px solid red;
+  			border-radius: 25px;
+			color: #e60000;
+			font-weight: 100;
+			background-color:  #ffff80;
+		}
+		h1{
+			color: magenta;
+			font-family: Cooper;
+		}
+		h2{
+			color: green;
+			font-family: Copperplate Gothic;
+		}
+	</style>
+</head>
+<body style="background-color: #ffffcc">
+
+	<h1>Darshan University</h1>
+	<h2>Attendence Management System</h2>
+	<input type="textarea" id="txt" name="">
+	<script type="text/javascript">
+		document.write("<hr/>");
+		document.write("Class W"+"<br/>");
+		for(i=101;i<159;i++){
+			document.write("<input type='checkbox' onclick='cli(this)' value="+i+">"+i+"<br/>");
+		}
+		document.write("<hr>");
+		document.write("Class X"+"<br/>");
+		for(i=201;i<259;i++){
+			document.write("<input type='checkbox' onclick='cli(this)' value="+i+">"+i+"<br/>");
+		}
+		document.write("<hr/>");
+		document.write("Class Y"+"<br/>");
+		for(i=301;i<359;i++){
+			document.write("<input type='checkbox' onclick='cli(this)' value="+i+">"+i+"<br/>");
+		}
+		document.write("<hr/>");
+		document.write("Class Z"+"<br/>");
+		for(i=401;i<459;i++){
+			document.write("<input type='checkbox' onclick='cli(this)' value="+i+">"+i+"<br/>");
+		}
+		function cli(a){
+			if(a.checked){
+				document.getElementById('txt').value += a.value;
+				document.getElementById('txt').value += ",";
+			}
+			else{
+				
+			}
+		}	
+	</script>
+</body>
+</html>
